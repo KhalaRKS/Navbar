@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #A2DBFA;
+    height: 60px;
+
+}
+.logo{
+    width: 100px;
+}
+.navegacion{
+    text-decoration: none;
+    list-style: none;
+}
+.navegacion li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #A2DBFA;
+    color: black;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 10px;
+    border-bottom: 2px solid #A2DBFA;
+    transition: 100ms ease;
+}
+.navegacion li:hover{
+    transition: 100ms ease;
+    border-bottom: 2px solid white;
+}
