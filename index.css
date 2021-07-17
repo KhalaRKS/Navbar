@@ -33,8 +33,8 @@
     }
     
 }
-/*@media  screen and (min-width: 1600px) {*/
-    .navbar{
+
+.navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -236,7 +236,33 @@ h2:hover{
         margin-top: 0vh;
     }
     .contenedor-section{
+        max-width: 1920px;
         height: 60vh;
+    }
+    .contenedor-main{
+        flex-direction: row;
+        height: 90vh;
+        max-width: 1920px;
+        justify-content: space-around;
+    }
+    .informacion-principal{
+        width: 60%;
+    }
+    .contenedor-imagen-main{
+        width:40%;
+    }
+    .descripcion-main{
+        width: 80%;
+        margin-top: 20vh;
+    }
+    .contenedor-imagen-main{
+        height: 30vh;
+    }
+    .botones-informacion-main{
+        justify-content: center;
+    }
+    .botones-main{
+        width: 40%;
     }
 }
 @media  screen and (min-width: 1000px) {
