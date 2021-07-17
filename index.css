@@ -1,9 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
 .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #A2DBFA;
+    background-color: #053742;
     height: 60px;
+    color: white;
 
 }
 .logo{
@@ -17,26 +24,96 @@
     transition: 400ms ease;
     transform: rotate(360deg);
 }
-h1:hover{
+h2:hover{
     transition: 600ms ease;
-    color: #39A2DB;
+    color: black;
 }
 .navegacion{
     text-decoration: none;
     list-style: none;
+    font-size: 1.2em;
 }
 .navegacion li{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
-    background-color: #A2DBFA;
-    color: black;
+    background-color: #0000;
+    color: white;
     display: inline-block;
     margin-left: 5px;
     padding: 10px;
-    border-bottom: 2px solid #A2DBFA;
-    transition: 100ms ease;
+    border-bottom: 2px solid #0000;
+    transition: 200ms ease;
 }
 .navegacion li:hover{
-    transition: 100ms ease;
+    transition: 200ms ease;
     border-bottom: 2px solid white;
+}
+.contenedor-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80vh;
+    margin-top: 10px;
+    background-color: #E8F0F2;
+}
+.informacion-principal{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 3em;
+    text-align: center;
+    height: 20vh;
+
+}
+.informacion-principal h1{
+    font-size: 0.7em;
+}
+.botones-informacion-main{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 10vh;
+}
+.botones-main{
+    width: 40%;
+    height: 3vh;
+    text-align: center;
+    font-size: 0.5em;
+    font-weight: 300;
+    color: black;
+    transition: 200ms ease-in;
+
+}
+.botones-main a{
+    font-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    padding: 1px;
+    border-bottom: 2px solid #E8F0F2;
+
+}
+.botones-main a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+    background-color: #E8F0F2;
+    transition: 200ms ease;
+}
+#boton-contacto{
+
+
+}
+#boton-saber-mas{
+
+}
+.imagen-main{
+    width: 30%;
+}
+.descripcion-main{
+    width: 70%;
+    text-align: center;
 }
