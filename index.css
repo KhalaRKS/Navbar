@@ -216,13 +216,15 @@ h2:hover{
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
     .contenedor-de-cajas-descripcion-main div{
         margin-top: 10px;
         height: 300px;
-        width: 45%;
-        max-width: 400px;
-        background-color: #e8f0f2bd;
+        width: 80%;
+        max-width: 360px;
+        background-color: #E8F0F2;
         
     }
     .contenedor-section{
@@ -234,7 +236,75 @@ h2:hover{
         margin-top: 5vh;
         text-align: center;
     }
+    .contenedor-section-formulario{
+        width: 100%;
+        margin-top: 5vh;
+    }
+    form{
+        margin: auto;
+        margin-top: 10px;
+        width: 90%;
+        border: 2px solid #A2DBFA;
+        background: #E8F0F2;
+        border-radius: 10px;
+        max-width: 700px;
+        padding: 5px;
+    }
+    .contenedor-formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+    .contenedor-li-formulario{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        width: 100%;
+    }
+    .input-formulario{
+        width: 50%;
+        max-width: 200px;
+        border: 2px solid #A2DBFA;
+        border-radius: 5px;
+        color: #053742;
+        font-size: 0.9em;
+        outline: none;
+    }
+    .input-formulario:focus{
+        box-shadow: 0px 0px 5px #A2DBFA;
 
+    }
+    .contenedor-titulo-form{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    #btn-enviar{
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        margin-top: 1vh;
+    }
+    #msg{
+        min-width: 50%;
+        max-width: 200px;
+        max-height: 100px;
+        min-height: 50px;
+    }
+    #enviar{
+        width: 100%;
+        height: 3vh;
+        border: 1px solid transparent;
+        background: #39A2DB;
+    }
+
+    .contenedor-footer{
+        margin-top: 15px;
+        width: 100%;
+        height: 30vh;
+        background: red         ;
+    }
 
 @media screen and (min-width: 480px){
     .informacion-principal h1{
@@ -262,7 +332,11 @@ h2:hover{
     }
     .contenedor-main-descripcion p{
         width: 80%;
+    }
+    #msg{
+    max-width: 300px;
 }
+
 @media screen and (min-width: 560px){
 
     .informacion-principal{
@@ -288,6 +362,24 @@ h2:hover{
     .contenedor-imagen-main p{
         margin-top: 5vh;
         padding: 3px;
+    }
+    .contenedor-de-cajas-descripcion-main{
+        flex-direction: row;
+    }
+    .contenedor-de-cajas-descripcion-main div{
+        margin-top: 10px;
+        height: 300px;
+        width: 48%;
+        max-width: 360px;
+        background-color: #E8F0F2;
+        
+    }
+    .input-formulario{
+        width: 50%;
+        max-width: 600px;
+    }
+    #msg{
+        max-width: 360px;
     }
 }
 @media screen and (min-width:900px) {
@@ -327,10 +419,10 @@ h2:hover{
     .contenedor-de-cajas-descripcion-main{
         width: 80%;
     }
+    #msg{
+        max-width: 50%;
+    }
 }
 @media  screen and (min-width: 1000px) {
-    .contenedor-de-cajas-descripcion-main{
-        width: 70%;
-    }
 }
 }
