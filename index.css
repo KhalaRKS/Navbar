@@ -268,7 +268,7 @@ h2:hover{
         max-width: 360px;
         box-shadow: 1px 0px 5px #cacaca;
         border-radius: 20px;
-        background-color: green;
+        background-color: #edf7fa;
         
     }
     .contenedor-de-cajas-descripcion-main p{
@@ -380,8 +380,51 @@ h2:hover{
     .contenedor-footer{
         margin-top: 15px;
         width: 100%;
-        height: 20vh;
-        background: red;
+        height: 28vh;
+    }
+    .contenedor-menu-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #A2DBFA;
+
+    }
+    .contenedor-titulos-footer{
+        width: 100%;
+        text-align: center;
+    }
+    .lista-footer{
+        width: 50%;
+        font-size: 0.9em;
+    }
+    .lista-footer li:nth-child(1){
+        color: black;
+        font-size: 1.2em;
+    }
+    
+    .lista-footer li{
+        list-style: none;
+    }
+    .lista-footer li a{
+        text-decoration: none;
+        color: inherit;
+        transition: 200ms ease;
+    }
+    .lista-footer li a:hover{
+        text-decoration: none;
+        color: #edf7fa;
+        transition: 150ms ease;
+    }
+    #redes-footer{
+        width: 100%;
+    }
+    .contenedor-footer p{
+        text-align: center;
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+    .contenedor-footer p a{
+        text-decoration: none;
     }
 @media screen and (min-width: 480px){
     .informacion-principal h1{
@@ -412,6 +455,20 @@ h2:hover{
     }
     #msg{
     max-width: 300px;
+    }
+    .lista-footer{
+        width: 30%;
+        font-size: 0.9em;
+    }
+    #informacion-footer{
+        width: 37%;
+    }
+    #redes-footer{
+        width: 30%;
+    }
+    .contenedor-footer{
+        height: 19vh;
+    }
 }
 
 @media screen and (min-width: 560px){
@@ -458,6 +515,16 @@ h2:hover{
     #msg{
         max-width: 360px;
     }
+    .lista-footer{
+        font-size: 1em;
+    }
+    
+    .contenedor-footer p{
+        font-size: 1em;
+    }
+    .contenedor-footer{
+        height: 21vh;
+    }
 }
 @media screen and (min-width:900px) {
     .contenedor-main-informacion{
@@ -482,7 +549,7 @@ h2:hover{
     }
     .descripcion-header{
         width: 80%;
-        margin-top: 20vh;
+        margin-top: 25vh;
     }
     .contenedor-imagen-header{
         height: 30vh;
@@ -502,7 +569,33 @@ h2:hover{
     .contenedor-marca{
         width: 20%;
     }
+    .lista-footer{
+        width: 30%;
+        font-size: 0.9em;
+    }
+    #informacion-footer{
+        width: 33%;
+    }
+    #redes-footer{
+        width: 20%;
+    }
 }
 @media  screen and (min-width: 1000px) {
+}
+@media  screen and (min-width:1200px) {
+    .lista-footer{
+        width: 25%;
+        font-size: 0.9em;
+    }
+    #informacion-footer{
+        width: 25%;
+    }
+    #redes-footer{
+        width: 20%;
+    }
+    .contenedor-footer{
+        height: 20vh;
+    }
+    
 }
 }
