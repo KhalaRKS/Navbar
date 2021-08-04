@@ -396,6 +396,7 @@ h2:hover{
     .lista-footer{
         width: 50%;
         font-size: 0.9em;
+        padding: 5px;
     }
     .lista-footer li:nth-child(1){
         color: black;
